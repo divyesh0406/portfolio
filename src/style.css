@@ -18,6 +18,15 @@ html {
   color: var(--imp-text-color) !important;
 }
 
+.cardinal {
+  color: #990000 !important;
+}
+
+.gold {
+  color: #FFCC00 !important;
+}
+
+
 button:focus {
   box-shadow: none !important;
 }

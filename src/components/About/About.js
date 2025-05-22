@@ -1,11 +1,11 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
-import Github from "./Github";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
-import laptopImg from "../../Assets/about.png";
+import laptopImg from "../../Assets/aboutds.webp";
 import Toolstack from "./Toolstack";
+import ExperienceTimeline from "./Timeline";
 
 function About() {
   return (
@@ -34,18 +34,17 @@ function About() {
             <img src={laptopImg} alt="about" className="img-fluid" />
           </Col>
         </Row>
+        <ExperienceTimeline />
         <h1 className="project-heading">
           Professional <strong className="purple">Skillset </strong>
         </h1>
-
+        
         <Techstack />
 
         <h1 className="project-heading">
           <strong className="purple">Tools</strong> I use
         </h1>
         <Toolstack />
-
-        <Github />
       </Container>
     </Container>
   );

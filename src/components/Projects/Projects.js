@@ -2,13 +2,11 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
-
+import sentiment from "../../Assets/Projects/sentiment.webp";
+import vts from "../../Assets/Projects/vts.webp";
+import APARA from "../../Assets/Projects/APARA.webp";
+import cyoa from "../../Assets/Projects/cyoa.webp";
+import reciepeApp from "../../Assets/Projects/reciepeApp.webp";
 function Projects() {
   return (
     <Container fluid className="project-section">
@@ -23,60 +21,60 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={APARA}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="AI-Powered Academic Research Assistant"
+              description="This research assistant seeks to empower students, making their academic endeavors more efficient and contributing to advancements in the field of computer science. It’s potential lies in easing the burden on students when it comes to retrieving information, conducting data analysis, and navigating through extensive literature."
+              ghLink="https://github.com/divyesh0406/AI-Powered-Academic-Research-Assistant"
+              // demoLink=""
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={cyoa}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Choose Your Own Adventure Game"
+              description="The game dynamically generates storylines based on user choices using natural language processing techniques. The application showcases how AI can personalize interactive narratives in real time, offering a unique experience with every playthrough.."
+              ghLink="https://github.com/divyesh0406/Choose-Your-Adventure-AI-Game"
+              // demoLink="https://blogs.soumya-jit.tech/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={reciepeApp}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Recipe App"
+              description="This mobile application, developed with Flutter and Firebase, streamlines recipe management by allowing users to add, explore, and favorite recipes. It integrates Razorpay for seamless ingredient purchases and provides features like order tracking and a shopping cart. Designed with a user-friendly interface, the app offers a practical solution for culinary enthusiasts to organize and enjoy cooking."
+              ghLink="https://github.com/divyesh0406/Recipe-App-using-Flutter"
+              // demoLink="https://editor.soumya-jit.tech/"              
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={sentiment}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Sentiment Analysis"
+              description="Developed a sentiment analysis application using BERT (Bidirectional Encoder Representations from Transformers) to classify text data into 'Positive', 'Negative', or 'Neutral' categories with 97% accuracy. The model leverages state-of-the-art NLP techniques for robust understanding of textual sentiment. Integrated the backend with a Flask-based web interface to enable user-friendly interaction with the model in real time."
+              ghLink="https://github.com/divyesh0406/SentimentAnalysis"
+              // demoLink="https://plant49-ai.herokuapp.com/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={vts}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
+              title="Voice Transcription and Summarization"
+              description="This Python-based project transforms audio recordings into concise, readable summaries. By leveraging speech recognition and natural language processing techniques, it accurately transcribes spoken content and distills it into key insights. Ideal for applications like meeting notes, interviews, and lectures, the tool enhances productivity by automating the extraction of essential information from lengthy audio files."
+              ghLink="https://github.com/divyesh0406/Voice-Transcription-and-Summarisation"
               // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          {/* <Col md={4} className="project-card">
             <ProjectCard
               imgPath={emotion}
               isBlog={false}
@@ -86,7 +84,7 @@ function Projects() {
               ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
               // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
             />
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     </Container>

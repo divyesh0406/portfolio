@@ -5,54 +5,24 @@ import { FaMicroscope, FaUsers, FaLaptopCode, FaCode } from 'react-icons/fa';
 
 const experiences = [
     {
-    title: "Data Science Intern",
-    company: "ServiceLink",
-    date: "June 2025 – August 2025",
-    icon: <FaLaptopCode />,
+    degree: "Master's in Computer Science - Data Science 🎓",
+    school: "University of Southern California",
+    date: "August 20245 – May 2026",
     description: "",
   },
     {
-    title: "Research Assistant",
-    company: "USC Ming Hsieh Dept. of ECE",
-    date: "Dec 2024 – May 2025",
-    icon: <FaMicroscope />,
-    description: "Optimized a COVID-19 simulation model using Cython and parallelism, improving speed by 25%.",
-  },
-  {
-    title: "Research Assistant",
-    company: "USC Keck School of Medicine",
-    date: "Sep 2024 – Dec 2024",
-    icon: <FaMicroscope />,
-    description: "Aligned DNA sequences and annotated mutations using Sniffles2 and protein mapping.",
-  },
-  {
-    title: "Data Analyst Intern",
-    company: "OziBook",
-    date: "Aug 2023 – Oct 2023",
-    icon: <FaUsers />,
-    description: "Led a team of 30 interns and created PowerBI dashboards to analyze client leads.",
-  },
-  {
-    title: "Data Science Intern",
-    company: "CodeClause",
-    date: "Apr 2023 – May 2023",
-    icon: <FaLaptopCode />,
-    description: "Built sentiment analysis and disease detection models using NLP and ML tools.",
-  },
-  {
-    title: "Webmaster",
-    company: "Code-X, SFIT",
-    date: "Aug 2022 – Jul 2023",
-    icon: <FaCode />,
-    description: "Rebuilt the club website with React and Firebase, reducing load time and security issues.",
-  },
+    degree: "Bachelor's in Computer Engineering - Data Science",
+    school: "University of Mumbai",
+    date: "August 2021 – May 2024",
+    description: "",
+  }
 ];
 
-export default function ExperienceTimeline() {
+export default function EducationTimeline() {
   return (
     <div style={{ padding: '60px 20px', position: 'relative' }}>
       <h2 style={{ textAlign: 'center', fontSize: '2rem', marginBottom: '60px', color: 'white' }}>
-        Experience 
+        Education 
       </h2>
 
       {/* Vertical line (starts below heading) */}
@@ -100,12 +70,12 @@ export default function ExperienceTimeline() {
                 border: '1px solid rgba(255, 255, 255, 0.1)',
               }}
             >
-              <div style={{ fontSize: '20px', marginBottom: '10px', color: '#a78bfa' }}>
+              {/* <div style={{ fontSize: '20px', marginBottom: '10px', color: '#a78bfa' }}>
                 {exp.icon}
-              </div>
-              <h3 style={{ fontSize: '1.25rem', marginBottom: '5px' }}>{exp.title}</h3>
+              </div> */}
+              <h3 style={{ fontSize: '1.25rem', marginBottom: '5px' }}>{exp.degree}</h3>
               <p style={{ fontSize: '0.9rem', marginBottom: '10px', color: '#cccccc' }}>
-                {exp.company} | {exp.date}
+                {exp.school} | {exp.date}
               </p>
               <p>{exp.description}</p>
             </div>

@@ -6,6 +6,8 @@ import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/aboutds.webp";
 import Toolstack from "./Toolstack";
 import ExperienceTimeline from "./Timeline";
+import EducationTimeline from "./Education";
+
 
 function About() {
   return (
@@ -34,7 +36,10 @@ function About() {
             <img src={laptopImg} alt="about" className="img-fluid" />
           </Col>
         </Row>
+        <EducationTimeline />
+
         <ExperienceTimeline />
+
         <h1 className="project-heading">
           Professional <strong className="purple">Skillset </strong>
         </h1>

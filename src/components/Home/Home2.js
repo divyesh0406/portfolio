@@ -34,7 +34,7 @@ function Home2() {
               <br />
               <br />
               My interests lie in crafting scalable machine learning tools, exploring the intersection of 
-        <b className="purple">AI and cloud platforms, </b>
+        <b className="purple"> AI and cloud platforms, </b>
               <i>
                 and deploying intelligent systems that deliver real-world impact.
               </i>

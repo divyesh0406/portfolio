@@ -9,7 +9,7 @@ const experiences = [
     company: "ServiceLink",
     date: "June 2025 – August 2025",
     icon: <FaLaptopCode />,
-    description: "",
+    description: "Built an end-to-end document analysis system by fine-tuning and quantizing a multimodal LLM, achieving 38% accuracy improvement and 70% model size reduction, then deploying it across mobile platforms via React Native for real-time, on-device inference.",
   },
     {
     title: "Research Assistant",

@@ -11,7 +11,7 @@ function AboutCard() {
             Hi Everyone, I am <span className="purple">Divyesh Mistry </span>
             from <span className="purple"> Los Angeles, California.</span>
             <br />
-            I am currently employed as a Data Science Intern at ServiceLink.
+            I am an Ex Data Science Intern at ServiceLink specializing in optimizing and quantizing LLM Models.
             <br />
             I am pursuing my <span className="purple">Masters in Computer Science - Data Science</span> at the <span className="gold">University of Southern California </span> <span className="cardinal">USC</span>.
             <br />

@@ -7,7 +7,7 @@ const experiences = [
     {
     degree: "Master's in Computer Science - Data Science 🎓",
     school: "University of Southern California",
-    date: "August 20245 – May 2026",
+    date: "August 2024 – May 2026",
     description: "",
   },
     {

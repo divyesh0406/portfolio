@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
+import AICODE from "../../Assets/Projects/AICODE.webp";
 import sentiment from "../../Assets/Projects/sentiment.webp";
 import vts from "../../Assets/Projects/vts.webp";
 import APARA from "../../Assets/Projects/APARA.webp";
@@ -19,6 +20,16 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={AICODE}
+              isBlog={false}
+              title="AI-Coding Assistant"
+              description="AI Coding Assistant is a Next.js app-router project styled with Tailwind that connects to Google’s Gemini to explain code, debug snippets with optional error context, and generate language-specific code from natural-language prompts; it offers tabbed workflows for each task, prefilled samples and quick prompts, and a history panel that logs recent inputs/outputs so users can quickly revisit or reuse prior interactions."
+              ghLink="https://github.com/divyesh0406/AI-Coding-Assistant"
+              // demoLink=""
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={APARA}

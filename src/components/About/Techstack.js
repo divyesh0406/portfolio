@@ -16,7 +16,10 @@ import {
   SiStreamlit,
   SiTableau,
   SiPowerbi,
-  SiFlutter
+  SiFlutter,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiTypescript   
 } from "react-icons/si";    
 import { FaAws, FaDocker } from "react-icons/fa";
 
@@ -37,6 +40,9 @@ function Techstack() {
       </Col> 
       <Col xs={4} md={2} className="tech-icons">
         <DiJavascript1 />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiTypescript />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiFlutter />
@@ -82,6 +88,12 @@ function Techstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiPowerbi />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiNextdotjs />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiTailwindcss />
       </Col>
     </Row>
   );

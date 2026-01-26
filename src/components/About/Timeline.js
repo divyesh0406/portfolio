@@ -1,5 +1,5 @@
-import React, { useRef } from 'react';
-import { motion, useInView, AnimatePresence } from 'framer-motion';
+import React from 'react';
+import { motion } from 'framer-motion';
 import { FaMicroscope, FaUsers, FaLaptopCode, FaCode } from 'react-icons/fa';
 
 

@@ -8,6 +8,8 @@ import vts from "../../Assets/Projects/vts.webp";
 import APARA from "../../Assets/Projects/APARA.webp";
 import cyoa from "../../Assets/Projects/cyoa.webp";
 import reciepeApp from "../../Assets/Projects/reciepeApp.webp";
+import URLShortner from "../../Assets/Projects/URLShortner.webp";
+import AutoML from "../../Assets/Projects/AutoML.webp";
 function Projects() {
   return (
     <Container fluid className="project-section">
@@ -20,6 +22,26 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={URLShortner}
+              isBlog={false}
+              title="Distributed URL Shortener with Rate Limiting and Analytics"
+              description="Full-stack distributed URL shortener built with FastAPI, PostgreSQL, Redis, and Docker. Features Redis cache-aside redirects, Lua-based rate limiting, idempotent creation, async SQLAlchemy, and a Kafka event pipeline for analytics. Backed by GitHub Actions CI/CD with 90% pytest coverage and validated via k6 load tests sustaining 300+ req/s with zero failures. Deployed on Render and Vercel."
+              ghLink="https://github.com/divyesh0406/Distributed-URL-Shortener-with-Rate-Limiting---Analytics"
+              demoLink="https://distributed-url-shortener-with-rate.vercel.app/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={AutoML}
+              isBlog={false}
+              title="AutoML Command Center"
+              description="Full-stack AutoML platform built with Next.js, FastAPI, PostgreSQL, Redis, and Celery, supporting end-to-end workflows from dataset upload and profiling to training, deployment, and real-time inference. Includes an AI-powered, dataset-aware assistant with tool-driven orchestration that automates 80%+ of experiment guidance. Deployed on Vercel and Fly.io with cross-validation, hyperparameter tuning, and telemetry, achieving sub-second inference latency."
+              ghLink="https://github.com/divyesh0406/AutoML-Command-Center"
+              demoLink="https://auto-ml-command-center.vercel.app/"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={AICODE}
